@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <th height="65" bgcolor="#999999" scope="col">MIS管理系统</th>
+    <th bgcolor="#999999" scope="col">服务器列表管理  <a href="add_server.php">[点击增加新服务器]</a></th>
+    <th bgcolor="#999999" scope="col">用户登录信息</th>
+  </tr>
+</table>
+<form id="form1" name="form1" method="post" action="add_server.php">
+  <p>&nbsp;</p>
+  <table width="100%" border="0" cellspacing="0">
+    <tr>
+      <th width="30%" align="right" bgcolor="#99CCCC" scope="row">服务器编号:</th>
+      <td width="70%"><label for="textfield"></label>
+      <input type="text" name="server_serial_number" id="textfield" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">所在城市:</th>
+      <td><input type="text" name="city" id="textfield2" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">所在节点:</th>
+      <td><input type="text" name="idc" id="textfield3" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">外网IP:</th>
+      <td><input type="text" name="server_wan_ip" id="textfield4" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">内网IP:</th>
+      <td><input type="text" name="server_lan_ip" id="textfield5" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">网关:</th>
+      <td><input type="text" name="server_gw_ip" id="textfield6" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">交换机IP:</th>
+      <td><input type="text" name="server_sw_ip" id="textfield7" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">服务器型号:</th>
+      <td><input type="text" name="server_device_mode" id="textfield8" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">背板号:</th>
+      <td><input type="text" name="server_board_number" id="textfield9" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">CPU:</th>
+      <td><input type="text" name="server_cpu" id="textfield10" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">MEM:</th>
+      <td><input type="text" name="server_mem" id="textfield11" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">DISK:</th>
+      <td><input type="text" name="server_disk" id="textfield12" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">服务器状态:</th>
+      <td><input type="text" name="server_status" id="textfield13" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">服务器购买时间:</th>
+      <td><input type="text" name="server_pay_time" id="textfield14" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">服务器保修时间:</th>
+      <td><input type="text" name="server_service_time" id="textfield15" /></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">服务器详细信息:</th>
+      <td><label for="textarea"></label>
+      <textarea name="server_msg" id="textarea" cols="45" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <th align="right" bgcolor="#99CCCC" scope="row">点击添加:</th>
+      <td><input type="submit" name="addsubmit" id="button" value="提交" /></td>
+    </tr>
+  </table>
+  <p></p>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>

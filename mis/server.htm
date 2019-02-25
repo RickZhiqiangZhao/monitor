@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <th height="65" bgcolor="#999999" scope="col">MIS管理系统</th>
+    <th bgcolor="#999999" scope="col">服务器列表管理  <a href="add_server.php">[点击增加新服务器]</a></th>
+    <th bgcolor="#999999" scope="col">用户登录信息</th>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="100%" border="1" cellspacing="0">
+  <tr>
+    <th align="left" scope="col">服务器编号</th>
+    <th align="left" scope="col">城市/节点</th>
+    <th align="left" scope="col">ip地址</th>
+    <th align="left" scope="col">内网地址</th>
+    <th align="left" scope="col">交换机ip</th>
+    <th align="left" scope="col">内存</th>
+    <th align="left" scope="col">用途</th>
+    <th align="left" scope="col">状态</th>
+    <th align="left" scope="col">功能操作</th>
+  </tr>
+  <?php foreach($serverlist as $server){?>
+  <tr>
+    <td bgcolor="#99CCCC"><?php echo $server['server_serial_number']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['city']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_wan_ip']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_lan_ip']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_gw_ip']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_mem']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_device_mode']?></td>
+    <td bgcolor="#99CCCC"><?php echo $server['server_status']?></td>
+    <td bgcolor="#99CCCC"><a href="edit_server.php?server_id=<?php echo $server['server_id']?>">编辑</a>  <a href="delete_server.php?server_id=<?php echo $server['server_id']?>">删除</a></td>
+  </tr>
+  <?php }?>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
